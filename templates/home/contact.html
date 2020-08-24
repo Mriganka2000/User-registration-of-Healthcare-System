@@ -1,0 +1,78 @@
+{% extends 'base.html' %} {% load static %}{% block title %} Heartbeat - Contact Us {% endblock title %} {% block contactactive %} active {% endblock contactactive %} {% block body %}
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+    <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+            <h2>Contact Us</h2>
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-about">
+                    <h3>Healthcare System</h3>
+                    <p>We are a Project based Company,working firmly on solutions to achieve something easier for the betterment of human kind.</p>
+                    <div class="social-links">
+                        <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+                        <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+                <div class="info">
+                    <div>
+                        <i class="ri-map-pin-line"></i>
+                        <p>157/F, Nilgunj Road, Panhati, Sodepur, <br>Kolkata - 700 114, West Bengal.
+                        </p>
+                    </div>
+
+                    <div>
+                        <i class="ri-mail-send-line"></i>
+                        <p>healthcaresystem@gmail.com</p>
+                    </div>
+
+                    <div>
+                        <i class="ri-phone-line"></i>
+                        <p>+91 9432012681</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
+                <form action="/contact" method="post" role="form" class="php-email-form"> {% csrf_token %}
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                        <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                        <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control" name="phone" id="subject" placeholder="phone" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                        <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="content" rows="5" data-rule="required" data-msg="Please write your messaage" placeholder="Message"></textarea>
+                        <div class="validate"></div>
+                    </div>
+                    <!-- <div class="mb-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div> -->
+                    <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- End Contact Section -->
+{% endblock body %}

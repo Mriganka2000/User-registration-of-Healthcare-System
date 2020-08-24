@@ -1,0 +1,467 @@
+{% extends 'base.html' %} {% load static %} {% block title %} Heartbeat - Home {% endblock title %}
+{% block homeactive %} active {% endblock homeactive %}
+
+{% block body %}
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                <h1 data-aos="fade-up">Detect your Disease within moments</h1>
+                <h2 data-aos="fade-up" data-aos-delay="400">We are team of Healthcare System helping you out of the
+                    problems of Diseases.</h2>
+                <div data-aos="fade-up" data-aos-delay="800">
+                    <a href="#about" class="btn-get-started scrollto" data-toggle="modal"
+                        data-target="#loginModal">Login</a>
+                    <a href="#about" class="btn-get-started scrollto" data-toggle="modal"
+                        data-target="#signupModal">Signup</a>
+                </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+                <img src="{% static 'img/health.png' %}" class="img-fluid animated" alt="">
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- End Hero -->
+
+<main id="main">
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients clients">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img src="{% static 'img/clients/client-1.png' %}" class="img-fluid" alt="" data-aos="zoom-in">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img src="{% static 'img/clients/client-2.png' %}" class="img-fluid" alt="" data-aos="zoom-in"
+                        data-aos-delay="100">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img src="{% static 'img/clients/client-3.png' %}" class="img-fluid" alt="" data-aos="zoom-in"
+                        data-aos-delay="200">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img src="{% static 'img/clients/client-4.png' %}" class="img-fluid" alt="" data-aos="zoom-in"
+                        data-aos-delay="300">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img src="{% static 'img/clients/client-5.png' %}" class="img-fluid" alt="" data-aos="zoom-in"
+                        data-aos-delay="400">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6">
+                    <img src="{% static 'img/clients/client-6.png' %}" class="img-fluid" alt="" data-aos="zoom-in"
+                        data-aos-delay="500">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End Clients Section -->
+
+
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+        <div class="container">
+
+            <div class="row">
+                <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start"
+                    data-aos="fade-right" data-aos-delay="150">
+                    <img src="{% static 'img/counts-img.svg' %}" alt="" class="img-fluid">
+                </div>
+
+                <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
+                    <div class="content d-flex flex-column justify-content-center">
+                        <div class="row">
+                            <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <i class="icofont-simple-smile"></i>
+                                    <span data-toggle="counter-up">65</span>
+                                    <p><strong>Happy Clients</strong></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <i class="icofont-document-folder"></i>
+                                    <span data-toggle="counter-up">85</span>
+                                    <p><strong>Projects</strong></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <i class="icofont-clock-time"></i>
+                                    <span data-toggle="counter-up">12</span>
+                                    <p><strong>Years of experience</strong></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 d-md-flex align-items-md-stretch">
+                                <div class="count-box">
+                                    <i class="icofont-award"></i>
+                                    <span data-toggle="counter-up">15</span>
+                                    <p><strong>Awards</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End .content-->
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Counts Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+        <div class="container">
+
+            <div class="section-title" data-aos="fade-up">
+                <h2>Services</h2>
+                <p></p>
+            </div>
+
+            <section id="more-services" class="more-services">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-6 d-flex align-items-stretch">
+                            <div class="card" style="background-image: url({% static 'img/heart background.jpg' %});"
+                                data-aos="fade-up" data-aos-delay="100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="">Heart Disease</a></h5>
+                                    <p class="card-text">On the basis of various references,predictions of heart
+                                        diseases are determined</p>
+                                    <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read
+                                            More</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                            <div class="card" style="background-image: url({% static 'img/Cancer.jpg' %});"
+                                data-aos="fade-up" data-aos-delay="200">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="">Cancer</a></h5>
+                                    <p class="card-text">In address to various parameters,high predictions are provided
+                                    </p>
+                                    <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read
+                                            More</a></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 d-flex align-items-stretch mt-4">
+                            <div class="card" style="background-image: url('{% static 'img/breast cancer.jpg' %}');"
+                                data-aos="fade-up" data-aos-delay="100">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="">Breast Cancer</a></h5>
+                                    <p class="card-text">On the basis of various references,predictions of Breast Cancer
+                                        is determined</p>
+                                    <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read
+                                            More</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-stretch mt-4">
+                            <div class="card" style="background-image: url({% static 'img/covid19.jpg' %});"
+                                data-aos="fade-up" data-aos-delay="200">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a href="">Covid-19(New)</a></h5>
+                                    <p class="card-text">In address to various parameters,high predictions are provided
+                                    </p>
+                                    <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read
+                                            More</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- End Services Section -->
+
+
+
+
+            <!-- ======= Team Section ======= -->
+            <section id="team" class="team section-bg">
+                <div class="container">
+
+                    <div class="section-title" data-aos="fade-up">
+                        <h2>Team</h2>
+                        <p></p>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                            <div class="member" data-aos="fade-up" data-aos-delay="100">
+                                <div class="member-img">
+                                    <img src="{% static 'img/team/Amlan Dutta.jpg' %}" class="img-fluid" alt="">
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href=""><i class="icofont-instagram"></i></a>
+                                        <a href=""><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Amlan Dutta</h4>
+                                    <span>Project Manager</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                            <div class="member" data-aos="fade-up" data-aos-delay="200">
+                                <div class="member-img">
+                                    <img src="{% static 'img/team/Abhijit Pal.png' %}" class="img-fluid" alt="">
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href=""><i class="icofont-instagram"></i></a>
+                                        <a href=""><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Abhijit Pal</h4>
+                                    <span>Team Member</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                            <div class="member" data-aos="fade-up" data-aos-delay="300">
+                                <div class="member-img">
+                                    <img src="{% static 'img/team/Md. Akram Khan.jpeg' %}" class="img-fluid" alt="">
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href=""><i class="icofont-instagram"></i></a>
+                                        <a href=""><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Md. Akram Khan</h4>
+                                    <span>Team Member</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                            <div class="member" data-aos="fade-up" data-aos-delay="400">
+                                <div class="member-img">
+                                    <img src="{% static 'img/team/Mriganka Bhadra.jpg' %}" class="img-fluid" alt="">
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href=""><i class="icofont-instagram"></i></a>
+                                        <a href=""><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Mriganka Bhadra</h4>
+                                    <span>Team Member</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch team">
+                            <div class="member" data-aos="fade-up" data-aos-delay="400">
+                                <div class="member-img">
+                                    <img src="{% static 'img/team/Ahmad Atik.jpg' %}" class="img-fluid" alt="">
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href=""><i class="icofont-instagram"></i></a>
+                                        <a href=""><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Ahmad Atik</h4>
+                                    <span>Team Member</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 d-flex align-items-stretch team">
+                            <div class="member" data-aos="fade-up" data-aos-delay="400">
+                                <div class="member-img">
+                                    <img src="{% static 'img/team/Ainik Sarkar.jpg' %}" class="img-fluid" alt="">
+                                    <div class="social">
+                                        <a href=""><i class="icofont-twitter"></i></a>
+                                        <a href=""><i class="icofont-facebook"></i></a>
+                                        <a href=""><i class="icofont-instagram"></i></a>
+                                        <a href=""><i class="icofont-linkedin"></i></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Ainik Sarkar</h4>
+                                    <span>Team Member</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <!-- End Team Section -->
+
+
+
+            <!-- ======= F.A.Q Section ======= -->
+            <section id="faq" class="faq">
+                <div class="container">
+
+                    <div class="section-title" data-aos="fade-up">
+                        <h2>Frequently Asked Questions</h2>
+                    </div>
+
+                    <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                        <div class="col-lg-5">
+                            <i class="ri-question-line"></i>
+                            <h4>Can the system detect the disease accurately?</h4>
+                        </div>
+                        <div class="col-lg-7">
+                            <p>
+                                The system designed will detect the disease to an accuracy level of 98%.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End F.A.Q Item-->
+
+                    <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                        <div class="col-lg-5">
+                            <i class="ri-question-line"></i>
+                            <h4>Can it also provide recommendations?</h4>
+                        </div>
+                        <div class="col-lg-7">
+                            <p>
+                                The system will also provide the best suited recommendation for the patient undergoing
+                                that specific disease.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End F.A.Q Item-->
+
+                    <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                        <div class="col-lg-5">
+                            <i class="ri-question-line"></i>
+                            <h4>How can the details of the disease shown?</h4>
+                        </div>
+                        <div class="col-lg-7">
+                            <p>
+                                The predicted disease will be displayed in a tabular form.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End F.A.Q Item-->
+
+                </div>
+            </section>
+            <!-- End F.A.Q Section -->
+            <!-- ======= Contact Section ======= -->
+            <section id="contact" class="contact">
+                <div class="container">
+
+                    <div class="section-title" data-aos="fade-up">
+                        <h2>Contact Us</h2>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                            <div class="contact-about">
+                                <h3>Healthcare System</h3>
+                                <p>We are a Project based Company,working firmly on solutions to achieve something
+                                    easier for the betterment of human kind.</p>
+                                <div class="social-links">
+                                    <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+                                    <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+                                    <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+                                    <a href="#" class="linkedin"><i class="icofont-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+                            <div class="info">
+                                <div>
+                                    <i class="ri-map-pin-line"></i>
+                                    <p>157/F, Nilgunj Road, Panhati, Sodepur, <br>Kolkata - 700 114, West Bengal.
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <i class="ri-mail-send-line"></i>
+                                    <p>healthcaresystem@gmail.com</p>
+                                </div>
+
+                                <div>
+                                    <i class="ri-phone-line"></i>
+                                    <p>+91 9432012681</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
+                            <form action="/contact" method="post" role="form" class="php-email-form"> {% csrf_token %}
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" id="name"
+                                        placeholder="Your Name" data-rule="minlen:4"
+                                        data-msg="Please enter at least 4 chars" />
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Your Email" data-rule="email"
+                                        data-msg="Please enter a valid email" />
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" name="phone" id="subject"
+                                        placeholder="phone" data-rule="minlen:4"
+                                        data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" name="content" rows="5" data-rule="required"
+                                        data-msg="Please write your messaage" placeholder="Message"></textarea>
+                                    <div class="validate"></div>
+                                </div>
+                                <!-- <div class="mb-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div> -->
+                                <div class="text-center"><button type="submit">Send Message</button></div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+            <!-- End Contact Section -->
+
+
+</main>
+<!-- End #main -->
+{% endblock body %}

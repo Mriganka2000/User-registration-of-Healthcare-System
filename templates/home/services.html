@@ -1,0 +1,63 @@
+{% extends 'base.html' %} {% load static %} {% block title %} Heartbeat - About {% endblock title %} {% block servicesactive %} active {% endblock servicesactive %} {% block body %}
+<!-- ======= Services Section ======= -->
+<section id="services" class="services">
+    <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+            <h2>Services</h2>
+            <p></p>
+        </div>
+
+        <section id="more-services" class="more-services">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-stretch">
+                        <div class="card" style="background-image: url({% static 'img/heart background.jpg' %});" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="">Heart Disease</a></h5>
+                                <p class="card-text">On the basis of various references,predictions of heart diseases are determined</p>
+                                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read
+                                        More</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                        <div class="card" style="background-image: url({% static 'img/Cancer.jpg' %});" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="">Cancer</a></h5>
+                                <p class="card-text">In address to various parameters,high predictions are provided
+                                </p>
+                                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read
+                                        More</a></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 d-flex align-items-stretch mt-4">
+                        <div class="card" style="background-image: url('{% static 'img/breast cancer.jpg' %}');" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="">Breast Cancer</a></h5>
+                                <p class="card-text">On the basis of various references,predictions of Breast Cancer is determined</p>
+                                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read
+                                        More</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-stretch mt-4">
+                        <div class="card" style="background-image: url({% static 'img/covid19.jpg' %});" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="">Covid-19(New)</a></h5>
+                                <p class="card-text">In address to various parameters,high predictions are provided
+                                </p>
+                                <div class="read-more"><a href="#"><i class="icofont-arrow-right"></i> Read
+                                        More</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Services Section -->
+        {% endblock body %}
